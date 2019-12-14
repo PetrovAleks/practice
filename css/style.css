@@ -1,14 +1,24 @@
 ul {
     list-style: none;
 }
+
 .main-navigation {
+    padding: 0px;
     background-color: f8f6f6;
     display: flex;
-   
+    justify-content: space-around;
+
 }
+
+
+
+
 .burger-menu {
     display: flex;
-   
+
+
+
+
 }
 
 .main-header-logo {
@@ -16,12 +26,17 @@ ul {
     margin: .5em;
     padding: 1em;
 }
+
 .burger-menu li {
     margin: .5em;
     padding: 1em;
-    
+
 }
+
 a {
-    text-decoration:none;
-    
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+
 }
