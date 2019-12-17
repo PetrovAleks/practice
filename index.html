@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <title>BOOSTFOLIA</title>
-  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" /> 
 </head>
 
 <body>
@@ -14,11 +16,13 @@
         <a href="#" class="main-header-logo">
 
           <img src="./img/Logo.png" alt="Лого компании" width="29" height="45" />
-          BOOSTFOLIA
+          <span class="logo-text">BOOSTFOLIA</span>
 
-        </a>
+        </a>      
       </h1>
       <ul class="burger-menu">
+        <label class="menu-btn" for="menu-toggle"><span></span></label>
+        <input id="menu-toggle" type="checkbox" />
         <li class="list-item-menu"><a href="#">Contact</a></li>
         <li class="list-item-menu"><a href="#">Pricing</a></li>
         <li class="list-item-menu"><a href="#">Blogs</a></li>
@@ -31,7 +35,7 @@
       </ul>
     </nav>
   </header>
-  <button value=""></button>
+  
 
   <main class="conteiner">
     <section class="slider">
@@ -83,7 +87,7 @@
       <button type="button">
         Play now
       </button>
-      <img src="/img/6829334723_422e949dac_b.png" width="802px" height="534px"></video>
+      <img src="/img/6829334723_422e949dac_b.png" width="802px" height="534px"></img>
     </section>
     <section class="works">
       <h2>Our works</h2>
@@ -172,15 +176,15 @@
 
           <li class="staff-list-item">
             <p class="neme-staff">Jane Smith <span class="profession">Designer</span>
-            </p class="neme">
+            </p >
           </li>
           <li class="staff-list-item">
             <p class="neme-staff">Jane Smith <span class="profession">Designer</span>
-            </p class="neme">
+            </p >
           </li>
           <li class="staff-list-item">
             <p class="neme-staff">Jane Smith <span class="profession">Designer</span>
-            </p class="neme">
+            </p >
             
           </li>
         </ul>
@@ -391,6 +395,10 @@
       </ul>
     </section>
     <section class="contact">
+      <h2>
+        Get in touch
+
+      </h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, possimus eveniet corporis quisquam est, tenetur,
         eaque consequuntur unde cum rem iure delectus excepturi iusto?
@@ -399,7 +407,7 @@
       <form action="">
         <label>Name<span>*</span><input type="text" name="neme" placeholder="Your name"></label>
         <label>Email <span>*</span><input type="email" name="email" placeholder="Your email"></label>
-        <label>Message<textarea name="Message" id="" cols="30" rows="10">Message</textarea></label>
+        <label>Message<textarea name="Message" id="Message" cols="30" rows="10">Message</textarea></label>
         <button type="submit">Send message</button>
       </form>
 

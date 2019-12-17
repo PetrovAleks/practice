@@ -1,43 +1,101 @@
-ul {
-    list-style: none;
+:root {
+    --navigation-link: #3d3d3d;
+
 
 }
 
-.main-navigation {
+body {
+    margin: 0px;
     padding: 0px;
-    background-color: rgb (23 23 23);
-    display: flex;
-    justify-content: space-around;
-    background-color: blue;
-}
 
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14;
+    line-height: auto;
+    font-weight: 300;
+    color: #696969;
+    text-transform: capitalize;
 
-
-
-.burger-menu {
-    display: flex;
-
-
-
-
-}
-
-.main-header-logo {
-    display: flex;
-    margin: .5em;
-    padding: 1em;
-}
-
-.burger-menu li {
-    margin: .5em;
-    padding: 1em;
-
+    background-color: f8f6f6;
 }
 
 a {
     text-decoration: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 0px;
+}
 
+a.main-heder-logo {
+    text-decoration: none;
+}
+
+.logo-text {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    color: #696969;
+
+}
+
+.burger-menu {
+    list-style: none;
+}
+
+.list-item-menu a {
+    font-family: "Roboto", Arial, sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    color: var(--navigation-linkd);
+    color: #696969;
+}
+
+.list-item-menu a:hover,
+.list-item-menu a:focus .list-item-menu a:active {
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-color: #e84c3d;
+    text-decoration-style: solid;
+
+}
+
+#menu-toggle {
+    opacity: 0;
+}
+
+
+.menu-btn {
+    /* display: flex; */
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    width: 26px;
+    height: 26px;
+
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-btn>span,
+.menu-btn>span::before,
+.menu-btn>span::after {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #616161;
+
+    transition-duration: .25s;
+}
+
+.menu-btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu-btn>span::after {
+    content: '';
+    top: 8px;
 }
