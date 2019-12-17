@@ -1,13 +1,14 @@
 ul {
     list-style: none;
+
 }
 
 .main-navigation {
     padding: 0px;
-    background-color: f8f6f6;
+    background-color: rgb (23 23 23);
     display: flex;
     justify-content: space-around;
-
+    background-color: blue;
 }
 
 
