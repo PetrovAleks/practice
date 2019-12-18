@@ -102,7 +102,9 @@ a.main-heder-logo {
 .lider-item {
   width: 1372px;
   height: 708px;
-  background-image: url(/img/slider1.png);
+  background-image: url(../img/slider1.png);
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .slider-list {
@@ -199,11 +201,17 @@ a.main-heder-logo {
   letter-spacing: 0.1em;
   color: var(--navigation-link);
 }
+.works-title-h3:focus {
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-color: #e84c3d;
+  text-decoration-style: solid;
+}
 
 .works-title-h3 span:hover,
-.works-title-h3 span:focus,
-.works-title-h3 span:active {
-    font-weight: 700;
-    text-decoration-line: underline;
-    text-decoration-color: #e84c3d;
-    text-decoration-style: solid;
+.works-title-h3 span:focus {
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-color: #e84c3d;
+  text-decoration-style: solid;
+}
