@@ -102,7 +102,7 @@ a.main-heder-logo {
 .lider-item {
     width: 1372px;
     height: 708px;
-    background-image: url(/img/slider1.png);
+    background-image: url(./img/slider1.png);
 }
 
 .slider-list {
