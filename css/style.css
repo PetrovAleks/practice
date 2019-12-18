@@ -1,7 +1,9 @@
 :root {
     --navigation-link: #3d3d3d;
+}
 
-
+.visualli-hidden {
+    display: none;
 }
 
 body {
@@ -31,7 +33,6 @@ a.main-heder-logo {
     font-size: 40px;
     letter-spacing: 0.1em;
     color: #696969;
-
 }
 
 .burger-menu {
@@ -54,13 +55,11 @@ a.main-heder-logo {
     text-decoration-line: underline;
     text-decoration-color: #e84c3d;
     text-decoration-style: solid;
-
 }
 
 #menu-toggle {
     opacity: 0;
 }
-
 
 .menu-btn {
     /* display: flex; */
@@ -87,15 +86,127 @@ a.main-heder-logo {
 
     background-color: #616161;
 
-    transition-duration: .25s;
+    transition-duration: 0.25s;
 }
 
 .menu-btn>span::before {
-    content: '';
+    content: "";
     top: -8px;
 }
 
 .menu-btn>span::after {
-    content: '';
+    content: "";
     top: 8px;
+}
+
+.lider-item {
+    width: 1372px;
+    height: 708px;
+    background-image: url(/img/slider1.png);
+}
+
+.slider-list {
+    list-style: none;
+}
+
+.slogan {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 60px;
+    letter-spacing: 0.15em;
+    line-height: auto;
+    color: #f5f5f5;
+}
+
+.inscription {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    line-height: auto;
+    color: #f5f5f5;
+
+}
+
+.call-to-action {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 12px;
+    color: #f5f5f5;
+
+
+}
+
+.title-bleck {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 45px;
+    letter-spacing: 0.1;
+    color: #3d3d3d;
+    text-decoration-line: underline;
+    text-decoration-color: #e84c3d;
+    text-decoration-style: solid;
+}
+
+.about-list {
+    list-style: none;
+}
+
+.about-list-item h3 {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.025;
+    color: #707070;
+}
+
+.video {
+    background-color: #171f23;
+}
+
+.behind-the-scene {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #e7e7e7;
+
+}
+
+
+
+
+.video-button {
+    text-align: center;
+    display: block;
+    border: none;
+    height: 35px;
+    width: 127px;
+    color: #ebebeb;
+    background-color: #e84c3d;
+    text-transform: uppercase;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14;
+    border-bottom: 2px solid #b11000;
+}
+
+.video-button:hover,
+.video-button:focus {
+    text-align: center;
+    display: block;
+    border: none;
+    height: 35px;
+    width: 127px;
+    color: #ebebeb;
+    background-color: #b11000;
+    text-transform: uppercase;
+    font-family: "Roboto", Arial, sans-serif;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 }
