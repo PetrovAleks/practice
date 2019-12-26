@@ -35,11 +35,20 @@ a.main-heder-logo {
   color: #696969;
 }
 
+.wrapper {
+  display: flex;
+
+}
+
 .burger-menu {
   list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: 450px;
 }
 
 .list-item-menu a {
+  margin-left: 20px;
   font-family: 'Roboto', Arial, sans-serif;
   text-decoration: none;
   font-size: 18px;
@@ -62,11 +71,11 @@ a.main-heder-logo {
 }
 
 .menu-btn {
-  /* display: flex; */
+  display: flex;
   align-items: center;
   position: fixed;
   top: 20px;
-  left: 20px;
+  right: 50px;
 
   width: 26px;
   height: 26px;
@@ -75,9 +84,9 @@ a.main-heder-logo {
   z-index: 1;
 }
 
-.menu-btn > span,
-.menu-btn > span::before,
-.menu-btn > span::after {
+.menu-btn>span,
+.menu-btn>span::before,
+.menu-btn>span::after {
   display: block;
   position: absolute;
 
@@ -89,26 +98,61 @@ a.main-heder-logo {
   transition-duration: 0.25s;
 }
 
-.menu-btn > span::before {
+.menu-btn>span::before {
   content: '';
   top: -8px;
 }
 
-.menu-btn > span::after {
+.menu-btn>span::after {
   content: '';
   top: 8px;
 }
 
+.slider {
+  width: 100%;
+  height: 708px;
+}
+
 .lider-item {
-  width: 1372px;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column wrap;
+  text-align: center;
   height: 708px;
   background-image: url(../img/slider1.png);
-  background-position: top center;
-  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+
+}
+
+.call-to-action {
+  font-weight: 700;
+  margin-top: 100px;
+
+
+
+}
+
+}
+
+.slogan {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
 }
 
 .slider-list {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .slogan {
@@ -191,9 +235,11 @@ a.main-heder-logo {
   text-transform: uppercase;
   font-family: 'Roboto', Arial, sans-serif;
 }
+
 .radio {
   opacity: 0;
 }
+
 .works-title-h3 span {
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
@@ -201,6 +247,7 @@ a.main-heder-logo {
   letter-spacing: 0.1em;
   color: var(--navigation-link);
 }
+
 .works-title-h3:focus {
   font-weight: 700;
   text-decoration-line: underline;
