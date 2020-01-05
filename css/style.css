@@ -2,6 +2,13 @@
   --navigation-link: #3d3d3d;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
 .visualli-hidden {
   display: none;
 }
@@ -15,24 +22,38 @@ body {
   line-height: auto;
   font-weight: 300;
   color: #696969;
-  text-transform: capitalize;
+  text-transform: unset;
+  text-align: center;
 
-  background-color: f8f6f6;
+  background-color: #f8f6f6;
+}
+.text {
+  margin: 0px;
 }
 
-.conteiner{
-  width: 1050px;
+.conteiner {
+  width: 1360px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/*
+ ///////////////// Шапка Сайта //////////////////////////////
+ */
+
 h1 {
   margin: 0;
   padding: 0;
 }
 
-a {
+.link-style {
   text-decoration: none;
 }
 
@@ -45,7 +66,6 @@ a {
   align-items: center;
   margin-top: 45px;
   margin-bottom: 45px;
-
 }
 
 .logo-text {
@@ -55,17 +75,13 @@ a {
   color: #696969;
 }
 
-.wrapper {
-  display: flex;
-  align-items: center;
-  
-
-}
-
 .burger-menu {
   list-style: none;
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
 }
 
 .list-item-menu a {
@@ -87,7 +103,11 @@ a {
   text-decoration-style: solid;
 }
 
-#menu-toggle {
+/*
+ ///////////////// Бургер меню //////////////////////////////
+ */
+
+/* #menu-toggle {
   opacity: 0;
 }
 
@@ -127,24 +147,27 @@ a {
 .menu-btn>span::after {
   content: '';
   top: 8px;
-}
+} */
 
+/*
+ ///////////////// Главный Слайдер //////////////////////////////
+ */
+
+.slider {
+  width: 100%;
+  height: 708px;
+
+  background-image: url(../img/slider1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-bottom: 135px;
+}
 
 .slider-list {
   list-style: none;
   margin: 0px;
   padding: 0px;
-}
-
-
-.slider {
-  width: 100%;
-  height: 708px;
-  background-color: #000000;
-  background-image: url(../img/slider1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-
 }
 
 .lider-item {
@@ -155,19 +178,10 @@ a {
   justify-content: center;
   align-items: center;
   height: 708px;
- 
 }
 .read {
-  color:#ef3c38;
+  color: #fe1800;
 }
-
-
-}
-
-.call-to-action {
-  font-weight: 700;
-  }
-
 
 .slogan {
   font-family: 'Oswald', Arial, sans-serif;
@@ -178,7 +192,6 @@ a {
   color: #f5f5f5;
   margin-top: auto;
   margin-bottom: 25px;
-
 }
 
 .inscription {
@@ -192,14 +205,21 @@ a {
   margin-bottom: 230px;
 }
 
-
-
 .call-to-action {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
-  color: #f5f5f5;
+  font-weight: 700;
+  color: #fff;
   margin-bottom: 50px;
+}
+
+/*
+ ///////////////// About us  //////////////////////////////
+ */
+
+.about-us {
+  margin-bottom: 120px;
 }
 
 .title-bleck {
@@ -207,13 +227,47 @@ a {
   font-size: 45px;
   letter-spacing: 0.1;
   color: #3d3d3d;
-  text-decoration-line: underline;
-  text-decoration-color: #e84c3d;
-  text-decoration-style: solid;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-top: 0px;
+  margin-bottom: 45px;
+}
+
+.about-text {
+  text-align: center;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 60px;
 }
 
 .about-list {
   list-style: none;
+  display: flex;
+
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-list-item {
+  flex-basis: 320px;
+  background-color: #ebebeb;
+
+  margin-right: 20px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 115px;
+  padding-bottom: 20px;
+}
+
+.about-list-item p {
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
 }
 
 .about-list-item h3 {
@@ -221,20 +275,49 @@ a {
   font-size: 18px;
   letter-spacing: 0.025;
   color: #707070;
+
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  text-align: center;
 }
+
+/*
+ ///////////////// Video  //////////////////////////////
+ */
 
 .video {
   background-color: #171f23;
+
+  display: flex;
+  margin-bottom: 85px;
+}
+
+.flex-wrapper {
+  padding-top: 135px;
+  flex-basis: 680px;
 }
 
 .behind-the-scene {
+  text-align: center;
+
+  margin-top: 0px;
+  margin-bottom: 35px;
+
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: bold;
   font-size: 30px;
   color: #e7e7e7;
+  text-transform: uppercase;
+}
+
+p.text {
+  margin-bottom: 45px;
 }
 
 .video-button {
+  padding: 0px;
+  margin: 0 auto;
   text-align: center;
   display: block;
   border: none;
