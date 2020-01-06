@@ -31,7 +31,7 @@ body {
   margin: 0px;
 }
 
-.conteiner {
+.container {
   width: 1360px;
   margin-left: auto;
   margin-right: auto;
@@ -158,11 +158,6 @@ h1 {
   height: 708px;
 
   background-color: #353535;
-
-  /* background-image: url(../img/slider1.png);
-  background-position: center;
-  background-repeat: no-repeat; */
-
   margin-bottom: 135px;
 }
 
@@ -300,6 +295,14 @@ h1 {
 .flex-wrapper {
   padding-top: 135px;
   flex-basis: 680px;
+  margin-left: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+
+.video-img {
+  margin-right: auto;
 }
 
 .behind-the-scene {
@@ -348,8 +351,34 @@ p.text {
   font-family: 'Roboto', Arial, sans-serif;
 }
 
+/*
+ ///////////////// WoRkS  //////////////////////////////
+ */
+.works {
+  margin-bottom: 85px;
+}
+
 .radio {
-  opacity: 0;
+  visibility: hidden;
+}
+.text-works {
+  margin-top: 0px;
+  margin-bottom: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 660px;
+  text-align: center;
+}
+.works-title-h3 {
+  margin-bottom: 30px;
+}
+
+.works-title-h3 label {
+  margin-left: 20px;
+}
+
+.works-title-h3 label:nth-child(1) {
+  margin-left: 0px;
 }
 
 .works-title-h3 span {
@@ -360,17 +389,73 @@ p.text {
   color: var(--navigation-link);
 }
 
-.works-title-h3:focus {
+.hover-focus:hover,
+.hover-focus:focus,
+.hover-focus:active {
+  border-bottom: 1px solid #e84c3d;
   font-weight: 700;
-  text-decoration-line: underline;
-  text-decoration-color: #e84c3d;
-  text-decoration-style: solid;
 }
 
-.works-title-h3 span:hover,
-.works-title-h3 span:focus {
-  font-weight: 700;
-  text-decoration-line: underline;
-  text-decoration-color: #e84c3d;
-  text-decoration-style: solid;
+.All-projects {
+  background-color: #b11000;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.All-projects-item {
+  flex-basis: 387px;
+  height: 300px;
+  background-color: #707070;
+  margin-right: 1px;
+}
+
+.All-projects-item:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+/*
+ ///////////////// Clients  //////////////////////////////
+ */
+
+.Clients {
+  background-color: #1c1c1c;
+}
+
+.Clients-list {
+  margin: 0 auto;
+  padding-left: 0px;
+  padding-top: 95px;
+  padding-bottom: 95px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 704px;
+}
+
+.clients-list-item {
+  flex-basis: 210px;
+  margin-right: 30px;
+}
+
+.clients-list-item:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+.link-klients {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+
+  font-size: 33px;
+  font-family: monospace;
+}
+.img-klients {
+  margin-right: 10px;
 }
