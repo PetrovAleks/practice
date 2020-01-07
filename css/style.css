@@ -18,7 +18,7 @@ body {
   padding: 0px;
 
   font-family: 'Roboto', Arial, sans-serif;
-  font-size: 14;
+  font-size: 14px;
   line-height: auto;
   font-weight: 300;
   color: #696969;
@@ -68,6 +68,11 @@ h1 {
   margin-bottom: 45px;
 }
 
+.main-header-logo:focus {
+  outline-width: 5px;
+  outline-color: #e84c3d;
+}
+
 .logo-text {
   font-family: 'Oswald', Arial, sans-serif;
   font-size: 40px;
@@ -96,10 +101,13 @@ h1 {
 }
 
 .list-item-menu a:hover,
-.list-item-menu a:focus .list-item-menu a:active {
+.list-item-menu a:focus,
+.list-item-menu a:active {
   font-weight: 700;
   text-decoration-line: underline;
   text-decoration-color: #e84c3d;
+  outline-width: 5px;
+  outline-color: #e84c3d;
   text-decoration-style: solid;
 }
 
@@ -222,7 +230,7 @@ h1 {
 .title-bleck {
   font-family: 'Oswald', Arial, sans-serif;
   font-size: 45px;
-  letter-spacing: 0.1;
+  letter-spacing: 0.1em;
   color: #3d3d3d;
 
   text-align: center;
@@ -347,6 +355,8 @@ p.text {
   width: 127px;
   color: #ebebeb;
   background-color: #b11000;
+  outline-width: 5px;
+  outline-color: #e84c3d;
   text-transform: uppercase;
   font-family: 'Roboto', Arial, sans-serif;
 }
@@ -361,6 +371,7 @@ p.text {
 .radio {
   visibility: hidden;
 }
+
 .text-works {
   margin-top: 0px;
   margin-bottom: 90px;
@@ -389,32 +400,47 @@ p.text {
   color: var(--navigation-link);
 }
 
+span.hover-focus {
+  color: #3d3d3d;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
 .hover-focus:hover,
 .hover-focus:focus,
 .hover-focus:active {
+  outline-width: 5px;
+  outline-color: #e84c3d;
   border-bottom: 1px solid #e84c3d;
   font-weight: 700;
 }
 
 .All-projects {
+  margin: 0px;
   background-color: #b11000;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
-  padding: 20px;
+  padding: 40px 0px;
 }
 
 .All-projects-item {
   flex-basis: 387px;
   height: 300px;
   background-color: #707070;
-  margin-right: 1px;
+  margin-right: 2px;
+  margin-bottom: 2px;
 }
 
-.All-projects-item:nth-last-child(1) {
+.All-projects-item:nth-child(4n) {
   margin-right: 0px;
+}
+
+.All-projects-item:nth-last-child(-n + 4) {
+  margin-bottom: 0px;
 }
 
 /*
@@ -423,6 +449,7 @@ p.text {
 
 .Clients {
   background-color: #1c1c1c;
+  margin-bottom: 85px;
 }
 
 .Clients-list {
@@ -458,4 +485,135 @@ p.text {
 }
 .img-klients {
   margin-right: 10px;
+}
+
+/*
+ ///////////////// Clients  //////////////////////////////
+ */
+
+.flex-container {
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-who-we-are {
+  margin-top: 0px;
+  margin-bottom: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 660px;
+  text-align: center;
+}
+
+.staff {
+  margin: 0px;
+  margin-left: auto;
+  margin-right: 30px;
+  padding-top: 240px;
+  padding-bottom: 120px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  flex-basis: 320px;
+  background-color: #ebebeb;
+}
+
+.staff-list {
+  margin-bottom: 25px;
+  padding-left: 0px;
+  list-style: none;
+
+  text-align: center;
+}
+
+.neme-staff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: black;
+}
+
+.profession {
+  color: #3d3d3d;
+
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+  list-style: none;
+}
+
+.social-links-item {
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.social-links-item:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+.social-links-item a:hover,
+.social-links-item a:focus {
+  outline-width: 5px;
+  outline-color: #e84c3d;
+}
+
+.my-skills {
+  flex-basis: 660px;
+  background-color: #ebebeb;
+
+  padding: 100px 45px 90px 65px;
+  margin-right: auto;
+
+  text-align: left;
+}
+
+.title-skills {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  text-transform: uppercase;
+  font-family: 'Roboto' sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+
+  color: black;
+}
+
+.text-my-skills {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.skills {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+
+  font-weight: 700;
+  color: #000;
+}
+
+.skills-item {
+  display: flex;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.skills-item:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+.skill-number {
+  margin-left: auto;
+  font-weight: 400;
+  color: #3d3d3d;
 }
