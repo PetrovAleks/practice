@@ -617,3 +617,53 @@ span.hover-focus {
   font-weight: 400;
   color: #3d3d3d;
 }
+
+/*
+ ///////////////// Clients  //////////////////////////////
+ */
+
+.FEATURES {
+  background-color: #171f23;
+  padding: 60px 0px 70px;
+}
+
+.title-FEATURES {
+  margin-top: 0px;
+  margin-bottom: 150px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.2em;
+
+  text-transform: uppercase;
+}
+
+.features-list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features-list-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 145px;
+
+  font-size: 18px;
+  color: #f6f6f6;
+}
+
+.features-list-item:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+.numbers {
+  margin-top: 30px;
+  font-size: 48px;
+  font-weight: 300;
+  color: #fff;
+}
