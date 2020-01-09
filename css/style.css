@@ -706,7 +706,10 @@ span.hover-focus {
 
 .blog-preview {
   flex-basis: 320px;
+  flex-wrap: wrap;
   margin-right: 20px;
+
+  background-color: #ebebeb;
 }
 
 .blog-preview:nth-last-child(1) {
@@ -715,6 +718,11 @@ span.hover-focus {
 
 .img-blog {
   margin: 0px;
+}
+.wrapper-blog {
+  margin: 0px;
+
+  padding: 42px 35px 25px 30px;
 }
 
 .title-blog {
@@ -725,11 +733,6 @@ span.hover-focus {
 
 .text-blog {
   margin-top: 0px;
+  margin-bottom: 30px;
   text-align: left;
-}
-
-.wrapper-blog {
-  margin: 0px;
-  background-color: #ebebeb;
-  padding: 42px 35px 25px 30px;
 }
