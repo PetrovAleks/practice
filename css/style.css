@@ -117,56 +117,6 @@ h1 {
   text-decoration-style: solid;
 }
 
-/*
- ///////////////// Бургер меню //////////////////////////////
- */
-
-/* #menu-toggle {
-  opacity: 0;
-}
-
-.menu-btn {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 20px;
-  right: 50px;
-
-  width: 26px;
-  height: 26px;
-
-  cursor: pointer;
-  z-index: 1;
-}
-
-.menu-btn>span,
-.menu-btn>span::before,
-.menu-btn>span::after {
-  display: block;
-  position: absolute;
-
-  width: 100%;
-  height: 2px;
-
-  background-color: #616161;
-
-  transition-duration: 0.25s;
-}
-
-.menu-btn>span::before {
-  content: '';
-  top: -8px;
-}
-
-.menu-btn>span::after {
-  content: '';
-  top: 8px;
-} */
-
-/*
- ///////////////// Главный Слайдер //////////////////////////////
- */
-
 .slider {
   width: 100%;
   height: 708px;
@@ -735,4 +685,156 @@ span.hover-focus {
   margin-top: 0px;
   margin-bottom: 30px;
   text-align: left;
+}
+
+/*
+ ///////////////// Pricing  //////////////////////////////
+ */
+
+.pricing {
+  background-color: #171f23;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+.title-pricing {
+  margin-top: 0px;
+  margin-bottom: 150px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.2em;
+
+  text-transform: uppercase;
+}
+
+.Pricing-listy {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  margin-right: 2px;
+}
+
+.Pricing-liste-item {
+  flex-basis: 230px;
+  background-color: #1f282c;
+  margin-right: 2px;
+  padding-bottom: 45px;
+}
+
+.Pricing-liste-item:hover,
+.Pricing-liste-item:focus {
+  border: 1px;
+  border-style: solid;
+  cursor: pointer;
+  box-shadow: 2px 4px 20px 1px #8e422a;
+}
+
+.Pricing-liste-item:hover .number-mini,
+.Pricing-liste-item:focus .number-mini {
+  color: #f6744b;
+}
+
+.wrapper-pricing {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  background-color: #0e1316;
+}
+
+.title-pricing-list {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1ems;
+  color: #fff;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+span.number {
+  font-weight: 300;
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0em;
+
+  margin-top: 0px;
+  margin-bottom: 45px;
+}
+
+.Pricing-list-list {
+  margin: 0px;
+  padding-top: 50px;
+  padding-left: 0px;
+}
+
+.Pricing-liste-liste-item {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  color: #fff;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.number-mini {
+  font-weight: bold;
+}
+
+.button-price {
+  padding: 10px 20px;
+
+  background-color: #f6744b;
+  border-style: none;
+  border-radius: 2px;
+
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+
+  cursor: pointer;
+  outline-color: #fff;
+}
+
+.button-price:hover,
+.button-price:focus {
+  box-shadow: 0px 0px 4px 1px #fac5b4;
+}
+
+/*
+ ///////////////// contact  //////////////////////////////
+ */
+
+.contact {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+.button-contacts {
+  padding: 10px 20px;
+
+  background-color: #f6744b;
+  border-style: none;
+  border-radius: 2px;
+
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+
+  cursor: pointer;
+  outline-color: #383f42;
+}
+
+.button-contacts:hover,
+.button-contacts:focus {
+  box-shadow: 0px 0px 4px 1px #383f42;
 }
