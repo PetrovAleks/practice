@@ -9,6 +9,7 @@ html {
 * {
   box-sizing: inherit;
 }
+
 .visualli-hidden {
   display: none;
 }
@@ -29,12 +30,11 @@ body {
 }
 
 .title-text {
-  text-align: center;
   width: 550px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .container {
@@ -45,22 +45,46 @@ body {
   padding-right: 20px;
 }
 
+.list-style {
+  list-style: none;
+}
+
 .wrapper {
   display: flex;
   align-items: center;
 }
 
+.link-style {
+  text-decoration: none;
+}
+
+.title-h2 {
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 45px;
+  letter-spacing: 0.1em;
+  color: #3d3d3d;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-top: 0px;
+  margin-bottom: 45px;
+}
+
 /*
  ///////////////// Шапка Сайта //////////////////////////////
  */
+.main-header {
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 2px #353535;
+  z-index: 1;
+}
 
 h1 {
   margin: 0;
   padding: 0;
-}
-
-.link-style {
-  text-decoration: none;
 }
 
 .main-header-logo img {
@@ -117,6 +141,10 @@ h1 {
   text-decoration-style: solid;
 }
 
+/*
+ ///////////////// Hero  //////////////////////////////
+ */
+
 .slider {
   width: 100%;
   height: 708px;
@@ -140,6 +168,7 @@ h1 {
   align-items: center;
   height: 708px;
 }
+
 .read {
   color: #fe1800;
 }
@@ -182,19 +211,6 @@ h1 {
 .about-us {
   padding-top: 100px;
   padding-bottom: 120px;
-}
-
-.title-bleck {
-  font-family: 'Oswald', Arial, sans-serif;
-  font-size: 45px;
-  letter-spacing: 0.1em;
-  color: #3d3d3d;
-
-  text-align: center;
-  text-transform: uppercase;
-
-  margin-top: 0px;
-  margin-bottom: 45px;
 }
 
 .about-list {
@@ -416,6 +432,7 @@ span.hover-focus {
   font-size: 33px;
   font-family: monospace;
 }
+
 .img-klients {
   margin-right: 2px;
 }
@@ -669,6 +686,7 @@ span.hover-focus {
 .img-blog {
   margin: 0px;
 }
+
 .wrapper-blog {
   margin: 0px;
 
@@ -705,8 +723,6 @@ span.hover-focus {
   font-weight: 400;
   color: #fff;
   letter-spacing: 0.2em;
-
-  text-transform: uppercase;
 }
 
 .Pricing-listy {
@@ -726,12 +742,17 @@ span.hover-focus {
   padding-bottom: 45px;
 }
 
+.Pricing-liste-item:nth-child(4n) {
+  margin-right: 0px;
+}
+
 .Pricing-liste-item:hover,
 .Pricing-liste-item:focus {
   border: 1px;
   border-style: solid;
   cursor: pointer;
   box-shadow: 2px 4px 20px 1px #8e422a;
+  position: relative;
 }
 
 .Pricing-liste-item:hover .number-mini,
@@ -817,9 +838,15 @@ span.number {
 .contact {
   padding-top: 85px;
   padding-bottom: 85px;
+  background-color: #fff;
 }
+
 .button-contacts {
-  padding: 10px 20px;
+  padding: 20px 20px;
+  width: 200px;
+
+  margin-right: auto;
+  margin-left: auto;
 
   background-color: #f6744b;
   border-style: none;
@@ -837,4 +864,86 @@ span.number {
 .button-contacts:hover,
 .button-contacts:focus {
   box-shadow: 0px 0px 4px 1px #383f42;
+}
+
+.form-contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+
+  margin: 0px auto 60px;
+}
+
+.input-contact {
+  display: block;
+  width: 370px;
+  border-style: none;
+  border-bottom: 1px solid #cacaca;
+
+  margin-bottom: 45px;
+  padding-top: 55px;
+}
+
+.text-input {
+  display: block;
+  margin-right: 20px;
+
+  text-align: left;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.text-input:nth-child(2) {
+  margin-right: 0px;
+}
+
+.color-input {
+  color: #f6744b;
+}
+.form-contact textarea {
+  display: block;
+  min-width: 760px;
+  border-style: none;
+  border-bottom: 1px solid #cacaca;
+  padding: 0px;
+  padding-top: 55px;
+
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+/*
+ ///////////////// FOOTER  //////////////////////////////
+ */
+.footer {
+  background-color: #171f23;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.logo-footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.logo-footer-text {
+  color: #fff;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text-footer {
+  color: #fff;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
 }
