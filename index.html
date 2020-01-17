@@ -23,14 +23,14 @@
         <ul class="burger-menu">
           <!-- <label class="menu-btn" for="menu-toggle"><span></span></label>
           <input id="menu-toggle" type="checkbox" /> -->
-          <li class="list-item-menu"><a class="link-style" href="#">Contact</a></li>
-          <li class="list-item-menu"><a class="link-style" href="#">Pricing</a></li>
-          <li class="list-item-menu"><a class="link-style" href="#">Blogs</a></li>
-          <li class="list-item-menu"><a class="link-style" href="#">Features</a></li>
+          <li class="list-item-menu"><a class="link-style" href="#contact">Contact</a></li>
+          <li class="list-item-menu"><a class="link-style" href="#pricing">Pricing</a></li>
+          <li class="list-item-menu"><a class="link-style" href="#blogs">Blogs</a></li>
+          <li class="list-item-menu"><a class="link-style" href="#features">Features</a></li>
           <li class="list-item-menu"><a class="link-style" href="#we_are">Team</a></li>
           <li class="list-item-menu"><a class="link-style" href="#client">Clients</a></li>
-          <li class="list-item-menu"><a class="link-style" href="#">Portfolio</a></li>
-          <li class="list-item-menu"><a class="link-style" href="#">Video</a></li>
+          <li class="list-item-menu"><a class="link-style" href="#portfolio">Portfolio</a></li>
+          <li class="list-item-menu"><a class="link-style" href="#video">Video</a></li>
           <li class="list-item-menu"><a class="link-style" href="#About_us">About</a></li>
         </ul>
       </div>
@@ -44,23 +44,38 @@
 
       <h2 class="visualli-hidden">Lorem ipsum dolor sit.</h2>
 
-      <ul class="slider-list">
-        <li class="lider-item">
-          <p class="slogan">We<span class="read"> Think </span>Creative be creative</p>
-          <p class="inscription">LIKE TO DO CREATIVE WORKS</p>
-          <p class="call-to-action"> <span class="svg"></span> SCROLL DOWN</p>
-        </li>
-        <!-- <li class="lider-item">
-              <p class="slogan">WE THINK CREATIVE BE CREATIVE</p>
-              <p class="inscription">LIKE TO DO CREATIVE WORKS</p>
-            </li>
-            <li class="lider-item">
-              <p class="slogan">WE THINK CREATIVE BE CREATIVE</p>
-              <p class="inscription">LIKE TO DO CREATIVE WORKS</p>
-            </li> -->
+      <div class="container-wrapper">
+        <ul class="slider-list">
+          <li class="lider-item">
+           <div class="wrapper-slider ">
+             <img src="/img/office-581127_1920.jpg" width="1700" alt="">
+              <div class="wrapper-slider-content">
+                <p class="slogan">We<span class="read"> Think </span>Creative be creative</p>
+                <p class="inscription">LIKE TO DO CREATIVE WORKS</p>
+                <p class="call-to-action"> SCROLL DOWN</p>
+                <button class="slider-buttonLeft">
 
-      </ul>
-      <p class="call-to-action ">SCROLL DOWN</p>
+                </button>
+                <button class="slider-buttonRigt">
+
+                </button>
+
+              </div>
+           </div>
+          </li>
+          <!-- <li class="lider-item">
+                <p class="slogan">WE THINK CREATIVE BE CREATIVE</p>
+                <p class="inscription">LIKE TO DO CREATIVE WORKS</p>
+              </li>
+              <li class="lider-item">
+                <p class="slogan">WE THINK CREATIVE BE CREATIVE</p>
+                <p class="inscription">LIKE TO DO CREATIVE WORKS</p>
+              </li> -->
+  
+        </ul>
+        
+      </div>
+     
 
 
     </section>
@@ -73,17 +88,16 @@
       <div class="container">
 
         <ul class="about-list">
-          <li class="about-list-item">
-            <h3>Creative design</h3>
-            <span class="icon1"></span>
+          <li class="about-list-item ">
+            <h3 class="cret_design">Creative design</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
           </li>
-          <li class="about-list-item">
-            <h3>Uniqu portfolio</h3>
+          <li class="about-list-item ">
+            <h3 class="portfo">Uniqu portfolio</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           </li>
-          <li class="about-list-item">
-            <h3>Infinite updates</h3>
+          <li class="about-list-item ">
+            <h3 class="infiniti">Infinite updates</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
           </li>
         </ul>
@@ -103,62 +117,66 @@
           Play now
         </button>
       </div>
-      <img src="./img/BGcopy.png" width="680" class="video-img" alt="sa">
+     
+      <div class="wrapper-video">
+          <video id="video" width="680"   poster="/img/plugins_v.png">
+            <source src="">
+              
+          </video>
+      </div>
+     
+        
 
     </section>
 
     <section class="works ">
-      <h2 class="title-h2">Our works</h2>
+      <h2 id="portfolio" class="title-h2">Our works</h2>
       <p class="title-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
         mollitia, nesciunt blanditiis eaque ratione animi nemo, porro ab velit
         assumenda fuga, culpa repellendus quo reiciendis.
       </p>
 
-      <div role=“group” aria-label=“works-radio“ class=" works-title-h3">
-        <label><input class="radio" name="works" value="projects" type="radio" /><span class="hover-focus">All
-            projects</span></label>
-        <label><input class="radio" name="works" value="Pohoto" type="radio" /><span
-            class="hover-focus">Photography</span></label>
-        <label><input class="radio" name="works" value="Designer" type="radio" /> <span class="hover-focus">Web
-            design</span></label>
-        <label><input class="radio" name="works" value="Brending" type="radio" /> <span
-            class="hover-focus">Brending</span></label>
-        <label><input class="radio" name="works" value="Mobile" type="radio" /><span class="hover-focus">Mobile
-            app</span></label>
-
+      <div role=“group” aria-label=“works-button“ class="works-title-h3">
+        <button class="hover-focus">All projects </button>
+        <button class="hover-focus">Photography </button>
+        <button class="hover-focus">Web design </button>
+        <button class="hover-focus">Brending </button>
+        <button class="hover-focus">Mobile app </button>
       </div>
-      <ul class="All-projects">
-        <li class="All-projects-item"><a class="works-link"><img src="" alt=""></a></li>
-        <li class="All-projects-item"><a class="works-link"><img src="" alt=""></a></li>
-        <li class="All-projects-item"><a class="works-link"><img src="" alt=""></a></li>
-        <li class="All-projects-item"><a class="works-link"><img src="" alt=""></a></li>
-        <li class="All-projects-item"><a class="works-link"><img src="" alt=""></a></li>
-        <li class="All-projects-item"><a class="works-link"><img src="" alt=""></a></li>
-        <li class="All-projects-item"><a class="works-link"><img src="" alt=""></a></li>
-        <li class="All-projects-item"><a class="works-link"><img src="" alt=""></a></li>
+
+      <ul class="projects">
+        <li class="projects-item"><a class="works-link"><img src="/img/port1.jpg" alt="" width="387"></a></li>
+        <li class="projects-item"><a class="works-link"><img src="/img/port2.jpg" alt="" width="387"></a></li>
+        <li class="projects-item"><a class="works-link"><img src="/img/port4.jpg" alt="" width="387"></a></li>
+        <li class="projects-item"><a class="works-link"><img src="/img/port3" alt="" width="387"></a></li>
 
       </ul>
     </section>
 
     <section class="Clients ">
-      <h2 class="visualli-hidden" id="client">Our client</h2>
+      <h2  class="visualli-hidden" >Our client</h2>
       <div class="container">
-        <ul class="Clients-list">
-
-          <li class="clients-list-item">
-            <a href="#" class="link-klients"><img class="img-klients" src="/img/VectorSmartObjectcopy5.png" alt=""
-                width="46" />themeforest</a>
-          </li>
-          <li class="clients-list-item">
-            <a href="#" class="link-klients"><img class="img-klients" src="/img/Black&White2.png" alt=""
-                width="46" />graphicriver</a>
-          </li>
-          <li class="clients-list-item">
-            <a href="#" class="link-klients"><img class="img-klients" src="/img/Black&White3.png" alt=""
-                width="46" />videohive</a>
-          </li>
-        </ul>
+        
+        
+        <div class="wrapper-slider-client ">
+          <ul id="client" class="Clients-list">
+  
+            <li class="clients-list-item">
+              <a href="#" class="link-klients themeforest">themeforest</a>
+            </li>
+            <li class="clients-list-item">
+              <a href="#" class="link-klients graphicriver">graphicriver</a>
+            </li>
+            <li class="clients-list-item">
+              <a href="#" class="link-klients videohive">videohive</a>
+            </li>
+          </ul>
+          <button class="slider-buttonLeft-client">
+            
+          </button>
+          <button class="slider-buttonRigt-client"></button>
+        </div>
       </div>
     </section>
 
@@ -219,7 +237,7 @@
             laboriosam magnam perferendis at.
           </p>
 
-          <ul class="skills">
+          <ul  class="skills">
             <li class="skills-item">Photoshop <span class="skill-number">88%</span></li>
             <li class="skills-item">Illustrator<span class="skill-number">92%</span></li>
             <li class="skills-item">Sketch<span class="skill-number">90%</span></li>
@@ -231,7 +249,7 @@
 
       <section class="FEATURES">
         <div class="container">
-          <h3 class="title-FEATURES">
+          <h3 id="features" class="title-FEATURES">
             Some FEATURES
           </h3>
 
@@ -259,7 +277,7 @@
 
     <section class="Blog">
 
-      <h2 class="title-h2">
+      <h2 id="blogs" class="title-h2">
         Blog Posts
       </h2>
 
@@ -324,7 +342,7 @@
 
     <section class="pricing">
       <div class="container">
-        <h2 class="title-pricing ">CHOSE PLAN</h2>
+        <h2 id="pricing" class="title-pricing ">CHOSE PLAN</h2>
         <ul class="Pricing-listy">
           <li class="Pricing-liste-item">
             <div class="wrapper-pricing">
@@ -446,7 +464,7 @@
 
     <section class="contact">
       <div class="container">
-        <h2 class="title-h2">
+        <h2 id="contact" class="title-h2">
           Get in touch
         </h2>
         <p class="title-text">
