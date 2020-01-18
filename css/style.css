@@ -1252,7 +1252,7 @@ video {
 .Shortcodes::before {
   display: block;
   content: '';
-  background-image: url(/img/Short_icn.png);
+  background-image: url(../img/Short_icn.png);
   background-repeat: no-repeat;
 
   width: 56px;
@@ -1263,7 +1263,7 @@ video {
 .Plugins::before {
   display: block;
   content: '';
-  background-image: url(/img/plugins_icn.png);
+  background-image: url(../img/plugins_icn.png);
   background-repeat: no-repeat;
   margin: 0px auto 35px;
   width: 56px;
@@ -1273,7 +1273,7 @@ video {
 .Products::before {
   display: block;
   content: '';
-  background-image: url(/img/products_icn.png);
+  background-image: url(../img/products_icn.png);
   background-repeat: no-repeat;
   margin: 0px auto 35px;
   width: 56px;
@@ -1283,7 +1283,7 @@ video {
 .Worldwide::before {
   display: block;
   content: '';
-  background-image: url(/img/clients_icn.png);
+  background-image: url(../img/clients_icn.png);
   background-repeat: no-repeat;
   margin: 0px auto 35px;
   width: 56px;
