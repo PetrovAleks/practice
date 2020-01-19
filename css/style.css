@@ -772,17 +772,8 @@ video {
   transition: filter 150ms linear;
 }
 
-.projects-item:hover .works-link img,
-.projects-item:focus .works-link img {
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  filter: blur(5px);
-}
-
-.projects-item,
-.blog-preview:hover,
-.projects-item,
-.blog-preview:focus {
+.projects-item:hover,
+.projects-item:focus {
   box-shadow: 0px 4px 15px 3px rgba(0, 0, 0, 0.7);
   display: flex;
 }
